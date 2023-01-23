@@ -24,19 +24,18 @@ This project built using **laravel 8.0**, so your php version must be >= **8.0**
    - seed command will creates one user in your database (check UserSeeder.php file)  
    - user credentials is [`email` => `test@user.user` , `password` => `testuser`]
 
-8. Some useful commands needed to Run:  
+8. Run those commands needed to Run (very important step):  
         `php artisan key:generate`  
-	`php artisan jwt:secret`  
-	`php artisan cache:clear`  
-	`php artisan config:clear`
+	`php artisan jwt:secret` 
+	`php artisan optimize`  
+	
 
-10. Run the project! `php artisan serve`
-11. Run `/docs#endpoints`  to read all APIs documentaion (its a package called scribe used for api docs)
-12. Run /api/login and pass email and password 
-13. This api will respond by a JWT token, use it through your session and pass it in header section to authenticate this user {Authorization = Bearer $generated_JWT }
-14. Then try to hit post api CRUD (create, update, and delete)
-15. DO NOT forget to put the generated token in the Headers section with key 'Authorization' and value `Bearer (generated token)`
-16. Useful commands i think you may need it  
+9. Run the project! `php artisan serve`
+10. Run /api/login and pass email and password 
+11. This api will respond by a JWT token, use it through your session and pass it in header section to authenticate this user {Authorization = Bearer $generated_JWT }
+12. Then try to hit post api CRUD (create, update, and delete)
+13. DO NOT forget to put the generated token in the Headers section with key 'Authorization' and value `Bearer (generated token)`
+14. Useful commands i think you may need it  
 	- `php artisan optimize`  
 	- `php artisan key:generate`  
 
