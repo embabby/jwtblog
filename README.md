@@ -24,7 +24,7 @@ This project built using **laravel 8.0**, so your php version must be >= **8.0**
    - seed command will creates one user in your database (check UserSeeder.php file)  
    - user credentials is [`email` => `test@user.user` , `password` => `testuser`]
 
-8. Run those commands needed to Run (very important step):  
+8. Run those commands needed to Run (VERY IMPORTANT STEP):  
         `php artisan key:generate`  
 	`php artisan jwt:secret` 
 	`php artisan optimize`  
